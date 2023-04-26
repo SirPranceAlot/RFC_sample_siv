@@ -3,7 +3,7 @@ Brightwheel Exercise - Terraform
 
 # Limitations
 
-I had limited testing for this on my personal AWS account.
+I had limited testing for this on my personal AWS account, there may be some minor bugs.
 
 # High-level Overview of the Implementation 
 There are three environments (aws org accounts). There is one module called iam, this module contains the framework to create groups and policies using a for loop to not duplicate resource declarations.
