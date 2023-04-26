@@ -31,8 +31,8 @@ variable "policies" {
     name        = string
     path        = string
     description = string
-    policy      = object({
-      Version   = string
+    policy = object({
+      Version = string
       Statement = list(object({
         Action   = list(string),
         Effect   = string

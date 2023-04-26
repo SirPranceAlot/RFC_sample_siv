@@ -5,7 +5,7 @@ module "org_parent" {
 }
 
 resource "aws_organizations_account" "brightwheel-qa" {
-  name  = "brightwheel-qa"
-  email = "brightwheel-qa@brightwheel.com"
+  name      = "brightwheel-qa"
+  email     = "brightwheel-qa@brightwheel.com"
   parent_id = module.org_parent.org_parent
 }

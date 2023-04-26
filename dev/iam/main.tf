@@ -5,12 +5,12 @@
 # This will also create groups for dev defined in the module. (I'm assuming dev/qa/prod are separate accounts in the org)
 
 module "iam" {
-  source   = "../../modules/iam"
+  source = "../../modules/iam"
   # We can list more policies in this list as needed.
   policies = [
     {
       policy = {
-        Version   = "2012-10-17",
+        Version = "2012-10-17",
         Statement = [
           {
             Effect = "Allow",
